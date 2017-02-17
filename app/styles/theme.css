@@ -1,0 +1,25 @@
+/* Mixins */
+/*MIXINS*/
+@font-face {
+  src: url(../fonts/SourceSansPro-Regular.ttf);
+  font-family: 'Source Sans';
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  src: url(../fonts/SourceSansPro-Light.ttf);
+  font-family: 'Source Sans';
+  font-style: normal;
+  font-weight: 300; }
+
+.cf-select {
+  font-family: 'Source Sans';
+  font-weight: 400;
+  font-size: 14px; }
+  .cf-select > .cfs-toggle {
+    background-color: #e62a60;
+    color: #fff; }
+    .cf-select > .cfs-toggle:hover {
+      background-color: #eb5882; }
+  .cf-select .cfs-options ul > li:empty {
+    min-height: 38px; }

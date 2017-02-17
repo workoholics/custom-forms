@@ -1,0 +1,22 @@
+{
+  "name": "custom-forms",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "igorworkoholics <igor@workoholics.es>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "^3.1.1",
+    "material-design-iconic-font": "^2.2.0"
+  }
+}

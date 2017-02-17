@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom forms </title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:js scripts/vendor.css -->
+    <!-- bower:js -->
+    <link rel="stylesheet" href="/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/custom-forms.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:css styles/custom-forms-base-theme.css -->
+    <link rel="stylesheet" href="styles/theme.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div>
+      <div class="cf-select" data-placeholder="Categoría">
+        <input class="value" type="text"/>
+        <a class="cfs-toggle"><span class="selected"></span><span class="icon zmdi zmdi-chevron-down"></span></a>
+        <div class="cfs-options">
+          <ul>
+            <li></li>
+            <li data-value="op1">Option 1</li>
+            <li data-value="op2">Option 2</li>
+            <li data-value="op3">Option 3</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cf-select" data-placeholder="Categoría">
+        <input class="value" type="text" value=""/>
+        <a class="cfs-toggle"><span class="selected"></span><span class="icon zmdi zmdi-chevron-down"></span></a>
+        <div class="cfs-options">
+          <ul>
+            <li></li>
+            <li data-value="op1">Option 1</li>
+            <li data-value="op2">Option 2</li>
+            <li data-value="op3">Option 3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jQuery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/custom-forms.js -->
+    <script src="scripts/custom-select.js"></script>
+    <script src="scripts/custom-forms.js"></script>
+    <!-- endbuild-->
+  </body>
+
+</html>

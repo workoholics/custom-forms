@@ -1,0 +1,28 @@
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+
+.cf-select{
+	font-family: 'Source Sans';
+	font-weight: 400;
+	font-size: 14px;
+	>.cfs-toggle{
+		background-color: $theme-pink;
+		color: $f-light; 
+		&:hover{
+			background-color: lighten($theme-pink,10%);
+		}
+	}
+
+	.cfs-options{
+		ul > li{
+			&:empty{
+				min-height: 38px;
+			}
+		}
+	}
+
+	.value{
+
+	}
+}
