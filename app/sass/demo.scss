@@ -1,3 +1,47 @@
 @import 'variables';
 @import 'mixins';
 
+
+*{
+	box-sizing: border-box;
+}
+body, html{
+	font-size: 14px;
+}
+
+h1{
+	font-size: 4rem;
+}
+h2{
+	font-size: 3rem;
+	margin: $gutter 0;
+}
+p{
+	font-size: 1.2rem;
+}
+
+.main{
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	font-family: "Source Sans";
+	@include mq-sm{
+		width: 540px;
+	}
+	@include mq-md{
+		width: 720px;
+	}
+	@include mq-lg{
+		width: 1140px;
+	}
+	header{
+		padding: $gutter * 8 0 $gutter * 2;
+		h1{
+			font-size: 4rem;
+			margin: 0;
+		}
+		small{
+			font-size: 1rem;
+		}
+	}
+}

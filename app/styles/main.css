@@ -41,7 +41,8 @@
     min-width: 100%;
     background-color: #fff;
     overflow: hidden;
-    height: 0; }
+    height: 0;
+    z-index: 10; }
     .cf-select .cfs-options ul {
       margin: 0;
       padding: 0;
