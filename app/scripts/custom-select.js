@@ -16,9 +16,7 @@
         		}	
         	}
         	else{
-        		if($select.attr('data-placeholder')){
-	        		setPlaceholder($select);
-	        	}
+        		setPlaceholder($select);
         	}
         	
 
@@ -50,7 +48,15 @@
         });
 
         function setPlaceholder($select){
-        	$select.find('.selected').html($select.attr('data-placeholder'));
+            if($select.attr('data-placeholder') && $select.attr('data-placeholder') !== ''){
+                $select.find('.selected').html($select.attr('data-placeholder'));
+                $select.find('.value').val('');
+            }
+            else{
+                $select.find('.selected').html('Choose an option');
+                $select.find('.value').val('');
+            }
+        	
         }
 
 
