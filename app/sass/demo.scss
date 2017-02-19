@@ -45,3 +45,10 @@ p{
 		}
 	}
 }
+
+pre{
+	background-color: #f7f7f7;
+	padding: $gutter * 2 $gutter;
+	line-height: 1.6;
+	display: block;
+}
