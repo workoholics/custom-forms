@@ -1,3 +1,4 @@
 (function($){
-	$('.cf-select').customSelect('open','hola');
+	$('.cf-select').customSelect();
+	$('.cf-radio').customRadio();
 }(jQuery));

@@ -12,6 +12,12 @@
   font-style: normal;
   font-weight: 300; }
 
+@font-face {
+  src: url(../fonts/SourceSansPro-Bold.ttf);
+  font-family: 'Source Sans';
+  font-style: normal;
+  font-weight: 500; }
+
 .cf-select {
   font-family: 'Source Sans';
   font-weight: 400;

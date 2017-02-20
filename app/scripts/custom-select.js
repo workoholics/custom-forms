@@ -6,6 +6,14 @@
         		$toggle = $select.find('.cfs-toggle'),
         		$options = $select.find('.cfs-options > ul > li');
 
+            if($select.attr('data-name')){
+                $select.prepend('<input type="text" class="value" name="' + $select.attr('data-name') + '">');
+            }
+            else{
+                 $select.prepend('<input type="text" class="value">');
+            }
+             
+
         	if($select.attr('data-selected') && $($options[$select.attr('data-selected') - 1]).length > 0){
         		var $selectedItem = $($options[$select.attr('data-selected') - 1]);
         		if($selectedItem.attr('data-value') && $selectedItem.attr('data-value') !== ''){
