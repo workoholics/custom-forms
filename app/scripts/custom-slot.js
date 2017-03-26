@@ -64,9 +64,10 @@
                 
                 var index = 0;
                 for(var i = $slot.min; i <= $slot.max ; i++){
-                    $slotUl.append('<li data-index="' + index + '">' + i + '</li>');
+                    $slotUl.append('<li>' + i + '</li>');
                     index++;
                 }
+                $slotUl.css({width:$vFrame.width() * (index +1)}); 
 
                 /* Establecer el nombre real del input*/
                 if(typeof $slot.attr('data-name') !== 'undefined'){
