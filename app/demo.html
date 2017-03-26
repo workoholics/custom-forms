@@ -31,18 +31,53 @@
         <small>by Worköholics</small>
       </header>
       <section>
+        <h2>Number Slot</h2>
+        <p>Selector de números enteros. Se indica el número mínimo y maximo de los números seleccionables.</p>
+        <div class="cf-slot" data-value="4" data-name="quantity" data-min="2" data-max="10">
+          <a class="ctrl subs"><span class="icon zmdi zmdi-minus"></span></a>
+          <span class="visible-frame"><ul></ul></span>
+          <a class="ctrl add"><span class="icon zmdi zmdi-plus"></a>
+        </div>
+        <pre>
+          &lt;div class="cf-slot" data-value="4" data-name="quantity" data-min="2" data-max="10"&gt;
+            &lt;a class="ctrl subs"&gt;&lt;span class="icon zmdi zmdi-minus">&lt;/span>&lt;/a&gt;
+            &lt;span class="visible-frame"&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/span&gt;
+            &lt;a class="ctrl add"&gt;&lt;span class="icon zmdi zmdi-plus"&gt;&lt;/a&gt;
+          &lt;/div&gt;
+        </pre>
+        <h3>Data attributes</h3>
+        <p>Parametros disponibles para configurar el componente.</p>
+        <table>
+          <tbody>
+            <tr>
+              <th>data-value</th>
+              <td>Valor por defecto del selector numerico, por defecto 0.</td>
+            </tr>
+            <tr>
+              <th>data-name</th>
+              <td>Nombre para el campo &lt;input/&gt; del fromulario.</td>
+            </tr>
+            <tr>
+              <th>data-min y data-max</th>
+              <td>Es el número mínimo y máximo que definen el rango de números seleccionables. Por defecto data-min="0" y data-max="10"</td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </section>
+      <section>
         <h2>Radio buttons</h2>
         <div class="cf-radio" data-group="radioGroup" data-value="a">
           <span class="cf-toggle"></span>
-          <span class="cf-text">A</span>
+          <span class="cf-text">Opción 1</span>
         </div>
         <div class="cf-radio" data-group="radioGroup" data-value="a+">
           <span class="cf-toggle"></span>
-          <span class="cf-text">A+</span>
+          <span class="cf-text">Opción 2</span>
         </div>
         <div class="cf-radio" data-group="radioGroup" data-value="t">
           <span class="cf-toggle"></span>
-          <span class="cf-text">T</span>
+          <span class="cf-text">Opción 3</span>
         </div>
       </section>
       <section>
@@ -106,6 +141,7 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/custom-forms.js -->
+    <script src="scripts/custom-slot.js"></script>
     <script src="scripts/custom-select.js"></script>
     <script src="scripts/custom-radio.js"></script>
     <script src="scripts/custom-forms.js"></script>

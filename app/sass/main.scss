@@ -110,8 +110,65 @@
 			font-weight: 500;
 		}
 	}
-
 }
+
+/* Slot base styles */
+.cf-slot{
+	position: relative;
+	width: $gutter * 7;
+	height: $gutter * 2;
+	>.ctrl{
+		position: absolute;
+		height: 100%;
+		top: 0;
+		border: 1px solid $f-dark;
+		width: $gutter * 2;
+		cursor: pointer;
+		&.subs{
+			left: 0;
+		}
+		&.add{
+			right: 0;
+		}
+		.icon{
+			display: block;
+			line-height: $gutter * 2;
+			text-align: center;
+			font-size: 17px;
+		}
+	}
+	.visible-frame{
+		width: $gutter * 3;
+		height: 100%;
+		display: block;
+		margin: 0 auto;
+		overflow: hidden;
+		border-top: 1px solid $f-dark;
+		border-bottom: 1px solid $f-dark;
+		>ul{
+			@include prefixer(transition,left .35s ease-in-out);
+			position: relative;
+			padding-left: 0;
+			margin: 0;
+			display: flex;
+			width: 2000px;
+			left: 0;
+			li{
+				width: $gutter * 3;
+				vertical-align: middle;
+				line-height: $gutter * 2;
+				text-align: center;
+				display: inline-block;
+				white-space: nowrap;
+			}
+		}
+	}
+	.value{
+		display: none;
+	}
+}
+
+
 
 /* Animations*/
 span.wave{

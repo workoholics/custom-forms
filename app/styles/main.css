@@ -115,6 +115,57 @@
   .cf-radio.checked .cf-text {
     font-weight: 500; }
 
+/* Slot base styles */
+.cf-slot {
+  position: relative;
+  width: 105px;
+  height: 30px; }
+  .cf-slot > .ctrl {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    border: 1px solid #000;
+    width: 30px;
+    cursor: pointer; }
+    .cf-slot > .ctrl.subs {
+      left: 0; }
+    .cf-slot > .ctrl.add {
+      right: 0; }
+    .cf-slot > .ctrl .icon {
+      display: block;
+      line-height: 30px;
+      text-align: center;
+      font-size: 17px; }
+  .cf-slot .visible-frame {
+    width: 45px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000; }
+    .cf-slot .visible-frame > ul {
+      -webkit-transition: left 0.35s ease-in-out;
+      -moz-transition: left 0.35s ease-in-out;
+      -ms-transition: left 0.35s ease-in-out;
+      -o-transition: left 0.35s ease-in-out;
+      transition: left 0.35s ease-in-out;
+      position: relative;
+      padding-left: 0;
+      margin: 0;
+      display: flex;
+      width: 2000px;
+      left: 0; }
+      .cf-slot .visible-frame > ul li {
+        width: 45px;
+        vertical-align: middle;
+        line-height: 30px;
+        text-align: center;
+        display: inline-block;
+        white-space: nowrap; }
+  .cf-slot .value {
+    display: none; }
+
 /* Animations*/
 span.wave {
   position: absolute;

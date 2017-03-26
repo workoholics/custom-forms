@@ -20,7 +20,6 @@
 
             }
         	
-
         	/*  ------------ Events ------------- */
 
         	/* Click en el botón de seleccionar radio*/
