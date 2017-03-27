@@ -18,7 +18,8 @@
 		padding: 0 $gutter;
 		background-color: $bg-grey;
 		cursor: pointer;
-		overflow: hidden; 
+		overflow: hidden;
+		color: $f-dark;
 		@include prefixer(transition,all .35s ease-in-out);
 		>.icon{
 			float: right;
@@ -54,6 +55,8 @@
 				padding: 10px $gutter;
 				@include prefixer(transition,all .35s ease-in-out);
 				cursor: pointer;
+				color: $f-dark;
+
 				&:hover{
 					background-color: #fafafa;
 				}
@@ -107,7 +110,7 @@
 			}
 		}
 		.cf-text{
-			font-weight: 500;
+			font-weight: 600;
 		}
 	}
 }
