@@ -6,7 +6,7 @@
                 $ctrlAdd = $slot.find('.ctrl.add'),
                 $ctrlSubs = $slot.find('.ctrl.subs'),
                 $vFrame = $slot.find('.visible-frame'),
-                $slotUl = $vFrame.find('ul');
+                $slotUl = $vFrame.find('ul'),
                 $inputValue = $('<input class="value" type="text"/>');
 
             $slot.selectedNumber = 0;
