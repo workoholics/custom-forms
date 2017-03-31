@@ -26,3 +26,15 @@
 
 	}
 }
+
+.cf-slot{
+	@include materialShadow(1);
+	.ctrl{
+		background-color: $theme-pink;
+		color: $f-light;
+		border: none;
+	}
+	.visible-frame{
+		border-color: #f7f7f7;
+	}
+}

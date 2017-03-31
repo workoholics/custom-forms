@@ -12,6 +12,12 @@
   font-style: normal;
   font-weight: 300; }
 
+@font-face {
+  src: url(../fonts/SourceSansPro-Bold.ttf);
+  font-family: 'Source Sans';
+  font-style: normal;
+  font-weight: 500; }
+
 .cf-select {
   font-family: 'Source Sans';
   font-weight: 400;
@@ -23,3 +29,12 @@
       background-color: #eb5882; }
   .cf-select .cfs-options ul > li:empty {
     min-height: 38px; }
+
+.cf-slot {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .cf-slot .ctrl {
+    background-color: #e62a60;
+    color: #fff;
+    border: none; }
+  .cf-slot .visible-frame {
+    border-color: #f7f7f7; }
