@@ -2,7 +2,7 @@
  
     $.fn.customSlot = function() {
         return this.each(function(){
-        	var $slot = $(this),
+            var $slot = $(this),
                 $ctrlAdd = $slot.find('.ctrl.add'),
                 $ctrlSubs = $slot.find('.ctrl.subs'),
                 $vFrame = $slot.find('.visible-frame'),
@@ -19,7 +19,7 @@
                 subsListener();
             }
             
-        	/*  ------------ Event listeners ------------- */
+            /*  ------------ Event listeners ------------- */
             function addListener(){
                 $ctrlAdd.on('click',function(){
                     if($slot.selectedNumber < $slot.max){
@@ -27,6 +27,7 @@
                         $slot.selectedIndex++;
                         setSlotPosition();
                     }
+                    $slot.trigger('slot.add',$slot);
                 });
             }
 
@@ -37,6 +38,7 @@
                         $slot.selectedIndex--;
                         setSlotPosition();
                     }
+                    $slot.trigger('slot.subs',$slot);
                 });
             }
 
